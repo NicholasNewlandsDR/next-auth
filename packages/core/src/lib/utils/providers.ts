@@ -34,10 +34,7 @@ export default function parseProviders(params: {
 
     const id = (userOptions?.id ?? defaults.id) as string
     // TODO: Support if properties have different types, e.g. authorization: string or object
-    const merged = merge(defaults, userOptions, {
-      signinUrl: `${url}/signin/${id}`,
-      callbackUrl: `${url}/callback/${id}`,
-    })
+    const merged = merge(defaults, userOptions);
 
     if (provider.type === "oauth" || provider.type === "oidc") {
       merged.redirectProxyUrl ??= options.redirectProxyUrl
