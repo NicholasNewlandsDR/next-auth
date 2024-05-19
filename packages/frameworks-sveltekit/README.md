@@ -7,11 +7,11 @@
       <a href="https://npm.im/next-auth">
         <img src="https://img.shields.io/badge/TypeScript-blue?style=flat-square" alt="TypeScript" />
       </a>
-      <a href="https://npm.im/@auth/sveltekit">
-        <img alt="npm" src="https://img.shields.io/npm/v/@auth/sveltekit?color=green&label=@auth/sveltekit&style=flat-square">
+      <a href="https://npm.im/@digital-realty/auth-sveltekit">
+        <img alt="npm" src="https://img.shields.io/npm/v/@digital-realty/auth-sveltekit?color=green&label=@digital-realty/auth-sveltekit&style=flat-square">
       </a>
-      <a href="https://www.npmtrends.com/@auth/sveltekit">
-        <img src="https://img.shields.io/npm/dm/@auth/sveltekit?label=%20downloads&style=flat-square" alt="Downloads" />
+      <a href="https://www.npmtrends.com/@digital-realty/auth-sveltekit">
+        <img src="https://img.shields.io/npm/dm/@digital-realty/auth-sveltekit?label=%20downloads&style=flat-square" alt="Downloads" />
       </a>
       <a href="https://github.com/nextauthjs/next-auth/stargazers">
         <img src="https://img.shields.io/github/stars/nextauthjs/next-auth?style=flat-square" alt="GitHub Stars" />

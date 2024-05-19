@@ -1,6 +1,6 @@
-import type { AuthConfig } from "@auth/core"
-import type { BuiltInProviderType } from "@auth/core/providers"
-import type { Session } from "@auth/core/types"
+import type { AuthConfig } from "@digital-realty/auth-core"
+import type { BuiltInProviderType } from "@digital-realty/auth-core/providers"
+import type { Session } from "@digital-realty/auth-core/types"
 
 export type LiteralUnion<T extends U, U = string> =
   | T

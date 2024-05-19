@@ -4,8 +4,8 @@ import { startAuthentication, startRegistration } from "@simplewebauthn/browser"
 import type {
   BuiltInProviderType,
   RedirectableProviderType,
-} from "@auth/core/providers"
-import type { WebAuthnOptionsResponseBody } from "@auth/core/types"
+} from "@digital-realty/auth-core/providers"
+import type { WebAuthnOptionsResponseBody } from "@digital-realty/auth-core/types"
 import type { SignInOptions, SignInAuthorizationParams } from "./client.js"
 import type { LiteralUnion } from "./types.js"
 
@@ -18,7 +18,7 @@ import type { LiteralUnion } from "./types.js"
  * @returns WebAuthn response or error
  */
 async function webAuthnOptions(providerId: string, options?: SignInOptions) {
-  const baseUrl = `${base}/auth/`
+  const baseUrl = `${base}/.auth/`
 
   // @ts-expect-error
   const params = new URLSearchParams(options)
@@ -67,9 +67,9 @@ export async function signIn<
   const isSupportingReturn = isCredentials || isEmail || isWebAuthn
 
   const basePath = base ?? ""
-  const signInUrl = `${basePath}/auth/${
-    isCredentials || isWebAuthn ? "callback" : "signin"
-  }/${providerId}`
+  const signInUrl = `${basePath}/login/${providerId}${
+    isCredentials || isWebAuthn ? "/callback" : ""
+  }`
 
   const _signInUrl = `${signInUrl}?${new URLSearchParams(authorizationParams)}`
 
@@ -86,7 +86,7 @@ export async function signIn<
   }
 
   // TODO: Remove this since Sveltekit offers the CSRF protection via origin check
-  const csrfTokenResponse = await fetch(`${basePath}/auth/csrf`)
+  const csrfTokenResponse = await fetch(`${basePath}/.auth/csrf`)
   const { csrfToken } = await csrfTokenResponse.json()
 
   const res = await fetch(_signInUrl, {

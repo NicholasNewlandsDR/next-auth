@@ -2,7 +2,7 @@ import { base } from "$app/paths"
 import type {
   BuiltInProviderType,
   RedirectableProviderType,
-} from "@auth/core/providers"
+} from "@digital-realty/auth-core/providers"
 import type { LiteralUnion } from "./types.js"
 
 /*
@@ -59,14 +59,14 @@ export async function signIn<
   const isSupportingReturn = isCredentials || isEmail
 
   const basePath = base ?? ""
-  const signInUrl = `${basePath}/auth/${
-    isCredentials ? "callback" : "signin"
-  }/${providerId}`
+  const signInUrl = `${basePath}/login/${providerId}${
+    isCredentials ? "/callback" : ""
+  }`
 
   const _signInUrl = `${signInUrl}?${new URLSearchParams(authorizationParams)}`
 
   // TODO: Remove this since SvelteKit offers the CSRF protection via origin check
-  const csrfTokenResponse = await fetch(`${basePath}/auth/csrf`)
+  const csrfTokenResponse = await fetch(`${basePath}/csrf`)
   const { csrfToken } = await csrfTokenResponse.json()
 
   const res = await fetch(_signInUrl, {
@@ -106,9 +106,9 @@ export async function signOut(options?: SignOutParams) {
   const { callbackUrl = window.location.href } = options ?? {}
   const basePath = base ?? ""
   // TODO: Remove this since SvelteKit offers the CSRF protection via origin check
-  const csrfTokenResponse = await fetch(`${basePath}/auth/csrf`)
+  const csrfTokenResponse = await fetch(`${basePath}/csrf`)
   const { csrfToken } = await csrfTokenResponse.json()
-  const res = await fetch(`${basePath}/auth/signout`, {
+  const res = await fetch(`${basePath}/logout`, {
     method: "post",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

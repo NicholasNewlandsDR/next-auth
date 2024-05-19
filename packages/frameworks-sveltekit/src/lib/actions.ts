@@ -3,7 +3,7 @@ import type { RequestEvent } from "@sveltejs/kit"
 import { parse } from "set-cookie-parser"
 import { env } from "$env/dynamic/private"
 
-import { Auth, createActionURL, raw, skipCSRFCheck } from "@auth/core"
+import { Auth, createActionURL, raw, skipCSRFCheck } from "@digital-realty/auth-core"
 import type { SvelteKitAuthConfig } from "./types"
 import { setEnvDefaults } from "./env"
 
@@ -28,7 +28,7 @@ export async function signIn(
 
   const callbackUrl = redirectTo?.toString() ?? headers.get("Referer") ?? "/"
   const base = createActionURL(
-    "signin",
+    "login",
     protocol,
     headers,
     env,
@@ -59,7 +59,7 @@ export async function signIn(
   }
 
   if (foundProvider === "credentials") {
-    url = url.replace("signin", "callback")
+    url = `${url}/callback`
   }
 
   headers.set("Content-Type", "application/x-www-form-urlencoded")
@@ -93,7 +93,7 @@ export async function signOut(
   headers.set("Content-Type", "application/x-www-form-urlencoded")
 
   const url = createActionURL(
-    "signout",
+    "logout",
     protocol,
     headers,
     env,

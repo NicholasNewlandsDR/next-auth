@@ -1,6 +1,6 @@
 /**
  * :::warning
- * `@auth/sveltekit` is currently experimental. The API _might_ change.
+ * `@digital-realty/auth-sveltekit` is currently experimental. The API _might_ change.
  * :::
  *
  * SvelteKit Auth is the official SvelteKit integration for Auth.js.
@@ -9,15 +9,15 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/sveltekit
+ * npm install @digital-realty/auth-sveltekit
  * ```
  *
  * ## Usage
  *
  * ```ts title="src/auth.ts"
  *
- * import { SvelteKitAuth } from "@auth/sveltekit"
- * import GitHub from "@auth/sveltekit/providers/github"
+ * import { SvelteKitAuth } from "@digital-realty/auth-sveltekit"
+ * import GitHub from "@digital-realty/auth-sveltekit/providers/github"
  *
  * export const { handle, signIn, signOut } = SvelteKitAuth({
  *   providers: [GitHub],
@@ -25,11 +25,11 @@
  * ```
  *
  * ### Lazy initialization
- * `@auth/sveltekit` supports lazy initialization where you can read the `event` object to lazily set the configuration. This is especially useful when you have to get the environment variables from `event.platform` for platforms like Cloudflare Workers.
+ * `@digital-realty/auth-sveltekit` supports lazy initialization where you can read the `event` object to lazily set the configuration. This is especially useful when you have to get the environment variables from `event.platform` for platforms like Cloudflare Workers.
  *
  * ```ts title="src/auth.ts"
- * import { SvelteKitAuth } from "@auth/sveltekit"
- * import GitHub from "@auth/sveltekit/providers/github"
+ * import { SvelteKitAuth } from "@digital-realty/auth-sveltekit"
+ * import GitHub from "@digital-realty/auth-sveltekit/providers/github"
  *
  * export const { handle, signIn, signOut } = SvelteKitAuth(async (event) => {
  *   const authOptions = {
@@ -65,14 +65,14 @@
  *
  * ### Server-side
  *
- * `<SignIn />` and `<SignOut />` are components that `@auth/sveltekit` provides out of the box - they handle the sign-in/signout flow, and can be used as-is as a starting point or customized for your own components. This is an example of how to use the `SignIn` and `SignOut` components to login and logout using SvelteKit's server-side form actions. You will need two things to make this work:
+ * `<SignIn />` and `<SignOut />` are components that `@digital-realty/auth-sveltekit` provides out of the box - they handle the sign-in/signout flow, and can be used as-is as a starting point or customized for your own components. This is an example of how to use the `SignIn` and `SignOut` components to login and logout using SvelteKit's server-side form actions. You will need two things to make this work:
  *
  * 1. Using the components in your SvelteKit app's frontend
  * 2. Add the required `page.server.ts` at `/signin` (for `SignIn`) and `/signout` (for `SignOut`) to handle the form actions
  *
  * ```ts
  * <script>
- *   import { SignIn, SignOut } from "@auth/sveltekit/components"
+ *   import { SignIn, SignOut } from "@digital-realty/auth-sveltekit/components"
  *   import { page } from "$app/stores"
  * </script>
  *
@@ -121,15 +121,15 @@
  *
  * ### Client-Side
  *
- * We also export two methods from `@auth/sveltekit/client` in order to do client-side sign-in and sign-out actions.
+ * We also export two methods from `@digital-realty/auth-sveltekit/client` in order to do client-side sign-in and sign-out actions.
  *
  * ```ts title="src/routes/index.svelte"
- * import { signIn, signOut } from "@auth/sveltekit/client"
+ * import { signIn, signOut } from "@digital-realty/auth-sveltekit/client"
  *
  * <nav>
  *   <p>
  *     These actions are all using the methods exported from
- *     <code>@auth/sveltekit/client</code>
+ *     <code>@digital-realty/auth-sveltekit/client</code>
  *   </p>
  *   <div class="actions">
  *     <div class="wrapper-form">
@@ -224,8 +224,8 @@
  * To use multiple handles in your `hooks.server.ts`, we can use SvelteKit's `sequence` to execute all of them in series.
  *
  * ```ts title="src/auth.ts"
- * import { SvelteKitAuth } from '@auth/sveltekit';
- * import GitHub from '@auth/sveltekit/providers/github';
+ * import { SvelteKitAuth } from '@digital-realty/auth-sveltekit';
+ * import GitHub from '@digital-realty/auth-sveltekit/providers/github';
  *
  * export const { handle, signIn, signOut } = SvelteKitAuth({
  *   providers: [GitHub]
@@ -270,10 +270,10 @@
  * - If you build your SvelteKit application with `prerender` enabled, pages which have an anchor tag to the default signin page (i.e. `<a href="/auth/signin" ...`) will have trouble building. Please use the [builtin functions or components](https://authjs.dev/getting-started/session-management/login?framework=sveltekit) to sign in or out instead.
  *
  * :::info
- * Learn more about `@auth/sveltekit` [here](https://vercel.com/blog/announcing-sveltekit-auth).
+ * Learn more about `@digital-realty/auth-sveltekit` [here](https://vercel.com/blog/announcing-sveltekit-auth).
  * :::
  *
- * @module @auth/sveltekit
+ * @module @digital-realty/auth-sveltekit
  */
 
 /// <reference types="@sveltejs/kit" />
@@ -283,10 +283,10 @@ import { env } from "$env/dynamic/private"
 import type { SvelteKitAuthConfig } from "./types"
 import { setEnvDefaults } from "./env"
 import { auth, signIn, signOut } from "./actions"
-import { Auth, isAuthAction } from "@auth/core"
+import { Auth, isAuthAction } from "@digital-realty/auth-core"
 import { building } from "$app/environment"
 
-export { AuthError, CredentialsSignin } from "@auth/core/errors"
+export { AuthError, CredentialsSignin } from "@digital-realty/auth-core/errors"
 
 export type {
   Account,
@@ -294,14 +294,14 @@ export type {
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@digital-realty/auth-core/types"
 
 export type { SvelteKitAuthConfig }
 
 const authorizationParamsPrefix = "authorizationParams-"
 
 /**
- * The main entry point to `@auth/sveltekit`
+ * The main entry point to `@digital-realty/auth-sveltekit`
  * @see https://sveltekit.authjs.dev
  */
 export function SvelteKitAuth(

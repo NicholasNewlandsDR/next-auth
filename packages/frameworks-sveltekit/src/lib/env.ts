@@ -1,4 +1,4 @@
-import { setEnvDefaults as coreSetEnvDefaults } from "@auth/core"
+import { setEnvDefaults as coreSetEnvDefaults } from "@digital-realty/auth-core"
 import { dev, building } from "$app/environment"
 import { base } from "$app/paths"
 import type { SvelteKitAuthConfig } from "./types"
@@ -8,7 +8,7 @@ export function setEnvDefaults(
   config: SvelteKitAuthConfig
 ) {
   config.trustHost ??= dev
-  config.basePath = `${base}/auth`
+  config.basePath = `${base}/.auth`
   if (building) return
   coreSetEnvDefaults(envObject, config)
 }
