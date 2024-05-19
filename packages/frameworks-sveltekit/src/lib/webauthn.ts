@@ -67,7 +67,7 @@ export async function signIn<
   const isSupportingReturn = isCredentials || isEmail || isWebAuthn
 
   const basePath = base ?? ""
-  const signInUrl = `${basePath}/login/${providerId}${
+  const signInUrl = `${basePath}/.auth/login/${providerId}${
     isCredentials || isWebAuthn ? "/callback" : ""
   }`
 
