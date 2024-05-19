@@ -1,5 +1,5 @@
 {
-  "name": "@auth/core",
+  "name": "@digital-realty/auth-core",
   "version": "0.31.0",
   "description": "Authentication for the Web.",
   "keywords": [

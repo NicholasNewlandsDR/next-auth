@@ -11,7 +11,7 @@
     "test:e2e": "turbo run test:e2e",
     "test:e2e:watch": "turbo run test:e2e -- --ui",
     "clean": "turbo run clean --no-cache",
-    "dev": "turbo run dev --parallel --continue --filter=next-auth-app... --filter=@auth/core --filter=!./packages/adapter-*",
+    "dev": "turbo run dev --parallel --continue --filter=next-auth-app... --filter=@digital-realty/auth-core --filter=!./packages/adapter-*",
     "dev:db": "turbo run dev --parallel --continue --filter=next-auth-app...",
     "dev:kit": "turbo run dev --parallel --continue --filter=sveltekit-auth-app...",
     "dev:express": "turbo run dev --parallel --continue --filter=express-auth-app...",

@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Bungie from "@auth/core/providers/bungie"
+ * import Auth from "@digital-realty/auth-core"
+ * import Bungie from "@digital-realty/auth-core/providers/bungie"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

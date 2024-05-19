@@ -1,7 +1,7 @@
 /**
  *
  * :::warning Experimental
- * `@auth/core` is under active development.
+ * `@digital-realty/auth-core` is under active development.
  * :::
  *
  * This is the main entry point to the Auth.js library.
@@ -14,13 +14,13 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core
+ * npm install @digital-realty/auth-core
  * ```
  *
  * ## Usage
  *
  * ```ts
- * import { Auth } from "@auth/core"
+ * import { Auth } from "@digital-realty/auth-core"
  *
  * const request = new Request("https://example.com")
  * const response = await Auth(request, {...})
@@ -33,7 +33,7 @@
  * - [Getting started](https://authjs.dev/getting-started)
  * - [Guides](https://authjs.dev/guides)
  *
- * @module @auth/core
+ * @module @digital-realty/auth-core
  */
 
 import { assertConfig } from "./lib/utils/assert.js"
@@ -86,7 +86,7 @@ export async function Auth(
  *
  * @example
  * ```ts
- * import Auth from "@auth/core"
+ * import Auth from "@digital-realty/auth-core"
  *
  * const request = new Request("https://example.com")
  * const response = await AuthHandler(request, {
@@ -201,7 +201,7 @@ export async function Auth(
  *
  * @example
  * ```ts
- * import Auth, { type AuthConfig } from "@auth/core"
+ * import Auth, { type AuthConfig } from "@digital-realty/auth-core"
  *
  * export const authConfig: AuthConfig = {...}
  *

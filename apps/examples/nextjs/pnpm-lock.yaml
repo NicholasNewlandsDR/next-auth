@@ -91,7 +91,7 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@auth/core@0.30.0':
+  '@digital-realty/auth-core@0.30.0':
     resolution: {integrity: sha512-8AE4m/nk+4EIiVCJwxZAsJeAQuzpEC8M8768mmKVn60CGDdupKQkVhxbRlm5Qh7eNRCoFFME+0DvtaX2aXrYaA==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
@@ -1565,7 +1565,7 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@auth/core@0.30.0(@simplewebauthn/server@9.0.3)':
+  '@digital-realty/auth-core@0.30.0(@simplewebauthn/server@9.0.3)':
     dependencies:
       '@panva/hkdf': 1.1.1
       '@types/cookie': 0.6.0
@@ -1579,7 +1579,7 @@ snapshots:
 
   '@auth/unstorage-adapter@2.0.0(@simplewebauthn/server@9.0.3)(unstorage@1.10.2(@upstash/redis@1.25.1)(@vercel/kv@1.0.1))':
     dependencies:
-      '@auth/core': 0.30.0(@simplewebauthn/server@9.0.3)
+      '@digital-realty/auth-core': 0.30.0(@simplewebauthn/server@9.0.3)
       unstorage: 1.10.2(@upstash/redis@1.25.1)(@vercel/kv@1.0.1)
     transitivePeerDependencies:
       - '@simplewebauthn/browser'
@@ -2529,7 +2529,7 @@ snapshots:
 
   next-auth@5.0.0-beta.17(@simplewebauthn/server@9.0.3)(next@14.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
     dependencies:
-      '@auth/core': 0.30.0(@simplewebauthn/server@9.0.3)
+      '@digital-realty/auth-core': 0.30.0(@simplewebauthn/server@9.0.3)
       next: 14.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
     optionalDependencies:

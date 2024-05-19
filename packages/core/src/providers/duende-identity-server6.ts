@@ -29,8 +29,8 @@ export interface DuendeISUser extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import DuendeIdentityServer6 from "@auth/core/providers/duende-identity-server6"
+ * import Auth from "@digital-realty/auth-core"
+ * import DuendeIdentityServer6 from "@digital-realty/auth-core/providers/duende-identity-server6"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -41,7 +41,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "@azure/data-tables": "^13.2.1"

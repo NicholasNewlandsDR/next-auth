@@ -27,8 +27,8 @@ import WebAuthn, {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import Passkey from "@auth/core/providers/passkey"
+ * import { Auth } from "@digital-realty/auth-core"
+ * import Passkey from "@digital-realty/auth-core/providers/passkey"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

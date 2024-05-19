@@ -41,8 +41,8 @@ export interface GoogleProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Google from "@auth/core/providers/google"
+ * import Auth from "@digital-realty/auth-core"
+ * import Google from "@digital-realty/auth-core/providers/google"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

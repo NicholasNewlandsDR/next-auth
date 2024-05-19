@@ -29,8 +29,8 @@ export interface PinterestProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Pinterest from "@auth/core/providers/pinterest"
+ * import Auth from "@digital-realty/auth-core"
+ * import Pinterest from "@digital-realty/auth-core/providers/pinterest"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

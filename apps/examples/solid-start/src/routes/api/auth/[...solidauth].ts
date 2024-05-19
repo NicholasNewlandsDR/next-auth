@@ -1,5 +1,5 @@
 import { SolidAuth, type SolidAuthConfig } from "@solid-auth/next"
-import GitHub from "@auth/core/providers/github"
+import GitHub from "@digital-realty/auth-core/providers/github"
 import { serverEnv } from "~/env/server"
 import { type APIEvent } from "solid-start"
 

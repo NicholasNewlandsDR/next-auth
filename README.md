@@ -5,7 +5,7 @@
   <p align="center">Authentication for the Web.</p>
   <p align="center">Open Source. Full Stack. Own Your Data.</p>
   <p align="center" style="align: center;">
-    <a href="https://npm.im/@auth/core">
+    <a href="https://npm.im/@digital-realty/auth-core">
       <img src="https://img.shields.io/badge/TypeScript-blue?style=flat-square" alt="TypeScript" />
     </a>
     <a href="https://www.npmtrends.com/next-auth">

@@ -22,8 +22,8 @@ import {
 import type {
   BuiltInProviderType,
   RedirectableProviderType,
-} from "@auth/core/providers"
-import type { LoggerInstance, Session } from "@auth/core/types"
+} from "@digital-realty/auth-core/providers"
+import type { LoggerInstance, Session } from "@digital-realty/auth-core/types"
 import type {
   AuthClientConfig,
   ClientSafeProvider,

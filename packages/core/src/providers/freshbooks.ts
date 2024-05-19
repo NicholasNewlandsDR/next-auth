@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import FreshBooks from "@auth/core/providers/freshbooks"
+ * import Auth from "@digital-realty/auth-core"
+ * import FreshBooks from "@digital-realty/auth-core/providers/freshbooks"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

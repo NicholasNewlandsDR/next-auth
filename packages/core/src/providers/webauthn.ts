@@ -164,8 +164,8 @@ export interface WebAuthnConfig extends CommonProviderOptions {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import WebAuthn from "@auth/core/providers/webauthn"
+ * import { Auth } from "@digital-realty/auth-core"
+ * import WebAuthn from "@digital-realty/auth-core/providers/webauthn"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

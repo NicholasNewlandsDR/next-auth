@@ -38,7 +38,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "unstorage": "^1.10.1"

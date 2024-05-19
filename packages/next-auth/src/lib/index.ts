@@ -1,9 +1,9 @@
-import { Auth, createActionURL, type AuthConfig } from "@auth/core"
+import { Auth, createActionURL, type AuthConfig } from "@digital-realty/auth-core"
 import { headers } from "next/headers"
 import { NextResponse } from "next/server"
 import { reqWithEnvURL } from "./env.js"
 
-import type { AuthAction, Awaitable, Session } from "@auth/core/types"
+import type { AuthAction, Awaitable, Session } from "@digital-realty/auth-core/types"
 import type {
   GetServerSidePropsContext,
   NextApiRequest,

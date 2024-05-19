@@ -33,8 +33,8 @@ export interface SpotifyProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Spotify from "@auth/core/providers/spotify"
+ * import Auth from "@digital-realty/auth-core"
+ * import Spotify from "@digital-realty/auth-core/providers/spotify"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -46,8 +46,8 @@ export interface PassageProfile {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Passage from "@auth/core/providers/passage"
+ * import Auth from "@digital-realty/auth-core"
+ * import Passage from "@digital-realty/auth-core/providers/passage"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

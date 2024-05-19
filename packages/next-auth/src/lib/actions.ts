@@ -1,11 +1,11 @@
-import { Auth, raw, skipCSRFCheck, createActionURL } from "@auth/core"
+import { Auth, raw, skipCSRFCheck, createActionURL } from "@digital-realty/auth-core"
 import { headers as nextHeaders, cookies } from "next/headers"
 import { redirect } from "next/navigation"
 
-import type { AuthAction } from "@auth/core/types"
+import type { AuthAction } from "@digital-realty/auth-core/types"
 import type { NextAuthConfig } from "./index.js"
 import type { NextAuthResult, Session } from "../index.js"
-import type { ProviderType } from "@auth/core/providers"
+import type { ProviderType } from "@digital-realty/auth-core/providers"
 import type { headers } from "next/headers"
 
 type SignInParams = Parameters<NextAuthResult["signIn"]>

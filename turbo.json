@@ -41,7 +41,7 @@
       "env": ["XATA_API_KEY", "XATA_DATABASE_URL"]
     },
     "@auth/hasura-adapter#build": {
-      "dependsOn": ["@auth/core#build"],
+      "dependsOn": ["@digital-realty/auth-core#build"],
       "outputs": [
         "lib/**",
         "*.js",
@@ -53,7 +53,7 @@
     "docs#dev": {
       "dependsOn": [
         "next-auth#build",
-        "@auth/core#build",
+        "@digital-realty/auth-core#build",
         "@auth/sveltekit#build",
         "@auth/express#build",
         "@auth/solid-start#build"
@@ -73,7 +73,7 @@
         "next.config.js"
       ],
       "dependsOn": [
-        "@auth/core#build",
+        "@digital-realty/auth-core#build",
         "@auth/azure-tables-adapter#build",
         "@auth/d1-adapter#build",
         "@auth/dgraph-adapter#build",

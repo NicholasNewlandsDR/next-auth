@@ -89,8 +89,8 @@ export interface YandexProfile {
  * @example
  *
  * ```ts
- * import { Auth } from "@auth/core"
- * import Yandex from "@auth/core/providers/yandex"
+ * import { Auth } from "@digital-realty/auth-core"
+ * import Yandex from "@digital-realty/auth-core/providers/yandex"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -32,8 +32,8 @@ export interface EVEOnlineProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import EveOnline from "@auth/core/providers/eveonline"
+ * import Auth from "@digital-realty/auth-core"
+ * import EveOnline from "@digital-realty/auth-core/providers/eveonline"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -29,7 +29,7 @@
  * @module @auth/xata-adapter
  */
 
-import type { Adapter } from "@auth/core/adapters"
+import type { Adapter } from "@digital-realty/auth-core/adapters"
 import type { XataClient } from "./xata"
 
 export function XataAdapter(client: XataClient): Adapter {

@@ -29,8 +29,8 @@ export interface CognitoProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Cognito from "@auth/core/providers/cognito"
+ * import Auth from "@digital-realty/auth-core"
+ * import Cognito from "@digital-realty/auth-core/providers/cognito"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

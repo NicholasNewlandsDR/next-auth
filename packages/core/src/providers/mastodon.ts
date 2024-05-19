@@ -42,8 +42,8 @@ export interface MastodonProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Mastodon from "@auth/core/providers/mastodon"
+ * import Auth from "@digital-realty/auth-core"
+ * import Mastodon from "@digital-realty/auth-core/providers/mastodon"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

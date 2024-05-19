@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import OneLogin from "@auth/core/providers/onelogin"
+ * import Auth from "@digital-realty/auth-core"
+ * import OneLogin from "@digital-realty/auth-core/providers/onelogin"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

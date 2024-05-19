@@ -33,8 +33,8 @@ export interface ClickUpProfile {
  *
  * #### Configuration
  * ```ts
- * import { Auth } from "@auth/core"
- * import ClickUp from "@auth/core/providers/click-up"
+ * import { Auth } from "@digital-realty/auth-core"
+ * import ClickUp from "@digital-realty/auth-core/providers/click-up"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

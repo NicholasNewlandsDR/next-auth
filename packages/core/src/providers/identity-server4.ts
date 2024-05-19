@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import IdentityServer4 from "@auth/core/providers/identity-server4"
+ * import Auth from "@digital-realty/auth-core"
+ * import IdentityServer4 from "@digital-realty/auth-core/providers/identity-server4"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

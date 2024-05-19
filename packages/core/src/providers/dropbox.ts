@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Dropbox from "@auth/core/providers/dropbox"
+ * import Auth from "@digital-realty/auth-core"
+ * import Dropbox from "@digital-realty/auth-core/providers/dropbox"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

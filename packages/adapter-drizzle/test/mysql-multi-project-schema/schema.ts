@@ -1,4 +1,4 @@
-import type { AdapterAccountType } from "@auth/core/adapters"
+import type { AdapterAccountType } from "@digital-realty/auth-core/adapters"
 import {
   int,
   mysqlTableCreator,

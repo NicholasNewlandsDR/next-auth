@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Mailru from "@auth/core/providers/mailru"
+ * import Auth from "@digital-realty/auth-core"
+ * import Mailru from "@digital-realty/auth-core/providers/mailru"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

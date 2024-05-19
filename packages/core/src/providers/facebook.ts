@@ -34,8 +34,8 @@ export interface FacebookProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Facebook from "@auth/core/providers/facebook"
+ * import Auth from "@digital-realty/auth-core"
+ * import Facebook from "@digital-realty/auth-core/providers/facebook"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

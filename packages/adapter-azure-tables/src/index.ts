@@ -21,7 +21,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
 import {
   GetTableEntityResponse,
   TableClient,

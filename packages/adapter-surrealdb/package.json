@@ -41,7 +41,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "surrealdb.js": "^0.11.0"

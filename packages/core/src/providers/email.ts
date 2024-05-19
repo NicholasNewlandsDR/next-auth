@@ -3,7 +3,7 @@ import type { Awaitable, Theme } from "../types.js"
 
 // TODO: Kepts for backwards compatibility
 // Remove this import and encourage users
-// to import it from @auth/core/providers/nodemailer directly
+// to import it from @digital-realty/auth-core/providers/nodemailer directly
 import Nodemailer from "./nodemailer.js"
 import type { NodemailerConfig, NodemailerUserConfig } from "./nodemailer.js"
 

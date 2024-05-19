@@ -15,7 +15,7 @@
  * @module @auth/dgraph-adapter
  */
 import { client as dgraphClient } from "./lib/client"
-import { isDate, type Adapter } from "@auth/core/adapters"
+import { isDate, type Adapter } from "@digital-realty/auth-core/adapters"
 import type { DgraphClientParams } from "./lib/client"
 import * as defaultFragments from "./lib/graphql/fragments"
 

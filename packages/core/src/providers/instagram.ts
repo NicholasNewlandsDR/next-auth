@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Instagram from "@auth/core/providers/instagram"
+ * import Auth from "@digital-realty/auth-core"
+ * import Instagram from "@digital-realty/auth-core/providers/instagram"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

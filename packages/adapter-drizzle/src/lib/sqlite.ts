@@ -16,7 +16,7 @@ import type {
   AdapterSession,
   AdapterUser,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
 
 export function defineTables(
   schema: Partial<DefaultSQLiteSchema> = {}

@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import FourSquare from "@auth/core/providers/foursquare"
+ * import Auth from "@digital-realty/auth-core"
+ * import FourSquare from "@digital-realty/auth-core/providers/foursquare"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -51,8 +51,8 @@ export interface ZitadelProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import ZITADEL from "@auth/core/providers/zitadel"
+ * import Auth from "@digital-realty/auth-core"
+ * import ZITADEL from "@digital-realty/auth-core/providers/zitadel"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

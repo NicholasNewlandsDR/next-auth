@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Reddit from "@auth/core/providers/reddit"
+ * import Auth from "@digital-realty/auth-core"
+ * import Reddit from "@digital-realty/auth-core/providers/reddit"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

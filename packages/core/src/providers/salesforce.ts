@@ -29,8 +29,8 @@ export interface SalesforceProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import salesforce from "@auth/core/providers/salesforce"
+ * import Auth from "@digital-realty/auth-core"
+ * import salesforce from "@digital-realty/auth-core/providers/salesforce"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

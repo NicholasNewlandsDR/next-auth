@@ -16,10 +16,10 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core
+ * npm install @digital-realty/auth-core
  * ```
  *
- * You can then import this submodule from `@auth/core/jwt`.
+ * You can then import this submodule from `@digital-realty/auth-core/jwt`.
  *
  * ## Usage
  *

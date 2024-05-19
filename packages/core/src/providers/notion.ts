@@ -62,8 +62,8 @@ const NOTION_API_VERSION = "2022-06-28"
  * @example
  *
  * ```ts
- * import { Auth } from "@auth/core"
- * import Notion from "@auth/core/providers/notion"
+ * import { Auth } from "@digital-realty/auth-core"
+ * import Notion from "@digital-realty/auth-core/providers/notion"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

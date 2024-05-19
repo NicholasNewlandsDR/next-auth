@@ -57,8 +57,8 @@ export interface PipedriveProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Pipedrive from "@auth/core/providers/pipedrive"
+ * import Auth from "@digital-realty/auth-core"
+ * import Pipedrive from "@digital-realty/auth-core/providers/pipedrive"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

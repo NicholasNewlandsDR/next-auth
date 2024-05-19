@@ -32,7 +32,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   },
   "devDependencies": {
     "@solidjs/meta": "^0.28.0",

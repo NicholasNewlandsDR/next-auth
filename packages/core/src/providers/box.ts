@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Box from "@auth/core/providers/box"
+ * import Auth from "@digital-realty/auth-core"
+ * import Box from "@digital-realty/auth-core/providers/box"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -22,7 +22,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
 import type { MongoClient } from "mongodb"
 
 /** This is the interface of the MongoDB adapter options. */

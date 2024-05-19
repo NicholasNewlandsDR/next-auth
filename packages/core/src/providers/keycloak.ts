@@ -46,8 +46,8 @@ export interface KeycloakProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Keycloak from "@auth/core/providers/keycloak"
+ * import Auth from "@digital-realty/auth-core"
+ * import Keycloak from "@digital-realty/auth-core/providers/keycloak"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

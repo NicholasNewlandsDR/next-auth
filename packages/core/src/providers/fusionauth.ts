@@ -43,8 +43,8 @@ export interface FusionAuthProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import FusionAuth from "@auth/core/providers/fusionauth"
+ * import Auth from "@digital-realty/auth-core"
+ * import FusionAuth from "@digital-realty/auth-core/providers/fusionauth"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

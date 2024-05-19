@@ -1,4 +1,4 @@
-import { type Session } from "@auth/core"
+import { type Session } from "@digital-realty/auth-core"
 import { getSession } from "@solid-auth/next"
 import { Component, Show } from "solid-js"
 import { useRouteData } from "solid-start"

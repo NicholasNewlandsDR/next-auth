@@ -49,7 +49,7 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "@prisma/client": ">=2.26.0 || >=3 || >=4 || >=5"

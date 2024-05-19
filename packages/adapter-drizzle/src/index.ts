@@ -25,7 +25,7 @@ import { DefaultPostgresSchema, PostgresDrizzleAdapter } from "./lib/pg.js"
 import { DefaultSQLiteSchema, SQLiteDrizzleAdapter } from "./lib/sqlite.js"
 import { DefaultSchema, SqlFlavorOptions } from "./lib/utils.js"
 
-import type { Adapter } from "@auth/core/adapters"
+import type { Adapter } from "@digital-realty/auth-core/adapters"
 
 export function DrizzleAdapter<SqlFlavor extends SqlFlavorOptions>(
   db: SqlFlavor,

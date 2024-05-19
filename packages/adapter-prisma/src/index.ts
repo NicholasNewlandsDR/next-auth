@@ -21,7 +21,7 @@ import type {
   AdapterAccount,
   AdapterSession,
   AdapterUser,
-} from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
 
 export function PrismaAdapter(
   prisma: PrismaClient | ReturnType<PrismaClient["$extends"]>

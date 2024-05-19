@@ -303,8 +303,8 @@ export interface VkProfile {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import VK from "@auth/core/providers/vk"
+ * import Auth from "@digital-realty/auth-core"
+ * import VK from "@digital-realty/auth-core/providers/vk"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

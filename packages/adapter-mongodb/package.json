@@ -38,7 +38,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   },
   "peerDependencies": {
     "mongodb": "^6"

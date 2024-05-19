@@ -2,12 +2,12 @@ import { apiBaseUrl } from "./lib/client.js"
 import { startAuthentication, startRegistration } from "@simplewebauthn/browser"
 import { getCsrfToken, getProviders, __NEXTAUTH } from "./react.js"
 
-import type { LoggerInstance } from "@auth/core/types"
-import type { WebAuthnOptionsResponseBody } from "@auth/core/types"
+import type { LoggerInstance } from "@digital-realty/auth-core/types"
+import type { WebAuthnOptionsResponseBody } from "@digital-realty/auth-core/types"
 import type {
   BuiltInProviderType,
   RedirectableProviderType,
-} from "@auth/core/providers"
+} from "@digital-realty/auth-core/providers"
 import type {
   AuthClientConfig,
   LiteralUnion,

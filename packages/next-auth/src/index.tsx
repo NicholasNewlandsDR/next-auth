@@ -67,13 +67,13 @@
  * @module next-auth
  */
 
-import { Auth } from "@auth/core"
+import { Auth } from "@digital-realty/auth-core"
 import { reqWithEnvURL, setEnvDefaults } from "./lib/env.js"
 import { initAuth } from "./lib/index.js"
 import { signIn, signOut, update } from "./lib/actions.js"
 
-import type { Session } from "@auth/core/types"
-import type { BuiltInProviderType } from "@auth/core/providers"
+import type { Session } from "@digital-realty/auth-core/types"
+import type { BuiltInProviderType } from "@digital-realty/auth-core/providers"
 import type {
   GetServerSidePropsContext,
   NextApiRequest,
@@ -85,7 +85,7 @@ import type {
 } from "./lib/types.js"
 import type { NextRequest } from "next/server"
 import type { NextAuthConfig, NextAuthRequest } from "./lib/index.js"
-export { AuthError, CredentialsSignin } from "@auth/core/errors"
+export { AuthError, CredentialsSignin } from "@digital-realty/auth-core/errors"
 
 export type {
   Session,
@@ -93,7 +93,7 @@ export type {
   Profile,
   DefaultSession,
   User,
-} from "@auth/core/types"
+} from "@digital-realty/auth-core/types"
 
 type AppRouteHandlers = Record<
   "GET" | "POST",
@@ -346,7 +346,7 @@ export interface NextAuthResult {
  *  @example
  * ```ts title="auth.ts"
  * import NextAuth from "next-auth"
- * import GitHub from "@auth/core/providers/github"
+ * import GitHub from "@digital-realty/auth-core/providers/github"
  *
  * export const { handlers, auth } = NextAuth({ providers: [GitHub] })
  * ```
@@ -356,7 +356,7 @@ export interface NextAuthResult {
  * @example
  * ```ts title="auth.ts"
  * import NextAuth from "next-auth"
- * import GitHub from "@auth/core/providers/github"
+ * import GitHub from "@digital-realty/auth-core/providers/github"
  *
  * export const { handlers, auth } = NextAuth((req) => {
  *   console.log(req) // do something with the request

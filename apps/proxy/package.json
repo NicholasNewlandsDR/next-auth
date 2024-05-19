@@ -5,6 +5,6 @@
   "type": "module",
   "packageManager": "pnpm@8.9.2",
   "dependencies": {
-    "@auth/core": "latest"
+    "@digital-realty/auth-core": "latest"
   }
 }

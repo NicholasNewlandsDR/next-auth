@@ -1,7 +1,7 @@
 import type {
   BuiltInProviderType,
   RedirectableProviderType,
-} from "@auth/core/providers"
+} from "@digital-realty/auth-core/providers"
 
 type LiteralUnion<T extends U, U = string> = T | (U & Record<never, never>)
 

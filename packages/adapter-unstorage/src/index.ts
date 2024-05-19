@@ -21,8 +21,8 @@ import type {
   AdapterSession,
   AdapterAuthenticator,
   VerificationToken,
-} from "@auth/core/adapters"
-import { isDate } from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
+import { isDate } from "@digital-realty/auth-core/adapters"
 import type { Storage, StorageValue } from "unstorage"
 
 /** This is the interface of the Unstorage adapter options. */

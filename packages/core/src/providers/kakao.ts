@@ -89,8 +89,8 @@ export interface KakaoProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Kakao from "@auth/core/providers/kakao"
+ * import Auth from "@digital-realty/auth-core"
+ * import Kakao from "@digital-realty/auth-core/providers/kakao"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

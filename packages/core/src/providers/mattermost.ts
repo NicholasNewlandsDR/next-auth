@@ -78,8 +78,8 @@ export interface MattermostProfile {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Mattermost from "@auth/core/providers/mattermost"
+ * import Auth from "@digital-realty/auth-core"
+ * import Mattermost from "@digital-realty/auth-core/providers/mattermost"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

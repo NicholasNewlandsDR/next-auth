@@ -35,8 +35,8 @@ export interface BoxyHQSAMLProfile extends Record<string, any> {
  *
  * For OAuth 2.0 Flow:
  *```js
- * import Auth from "@auth/core"
- * import BoxyHQ from "@auth/core/providers/boxyhq-saml"
+ * import Auth from "@digital-realty/auth-core"
+ * import BoxyHQ from "@digital-realty/auth-core/providers/boxyhq-saml"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {
@@ -51,8 +51,8 @@ export interface BoxyHQSAMLProfile extends Record<string, any> {
  * For OIDC Flow:
  *
  *```js
- * import Auth from "@auth/core"
- * import BoxyHQ from "@auth/core/providers/boxyhq-saml"
+ * import Auth from "@digital-realty/auth-core"
+ * import BoxyHQ from "@digital-realty/auth-core/providers/boxyhq-saml"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

@@ -41,8 +41,8 @@ export interface NaverProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Naver from "@auth/core/providers/naver"
+ * import Auth from "@digital-realty/auth-core"
+ * import Naver from "@digital-realty/auth-core/providers/naver"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

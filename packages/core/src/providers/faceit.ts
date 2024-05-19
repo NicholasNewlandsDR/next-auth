@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import FACEIT from "@auth/core/providers/faceit"
+ * import Auth from "@digital-realty/auth-core"
+ * import FACEIT from "@digital-realty/auth-core/providers/faceit"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

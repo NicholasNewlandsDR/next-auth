@@ -55,8 +55,8 @@ export interface ZoomProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Zoom from "@auth/core/providers/zoom"
+ * import Auth from "@digital-realty/auth-core"
+ * import Zoom from "@digital-realty/auth-core/providers/zoom"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

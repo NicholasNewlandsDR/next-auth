@@ -5,10 +5,10 @@
  * ## Installation
  *
  * ```bash npm2yarn
- * npm install @auth/core
+ * npm install @digital-realty/auth-core
  * ```
  *
- * You can then import this submodule from `@auth/core/types`.
+ * You can then import this submodule from `@digital-realty/auth-core/types`.
  *
  * ## Usage
  *
@@ -25,7 +25,7 @@
  *
  * @example
  * ```ts title=index.ts
- * import { Auth } from "@auth/core"
+ * import { Auth } from "@digital-realty/auth-core"
  *
  * const request = new Request("https://example.com")
  * const response = await Auth(request, {
@@ -327,6 +327,8 @@ export type AuthAction =
   | "error"
   | "providers"
   | "session"
+  | "login"
+  | "logout"
   | "signin"
   | "signout"
   | "verify-request"

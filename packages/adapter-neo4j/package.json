@@ -47,6 +47,6 @@
     "neo4j-driver": "^5.7.0"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@digital-realty/auth-core": "workspace:*"
   }
 }

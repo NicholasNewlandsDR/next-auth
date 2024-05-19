@@ -44,7 +44,7 @@
     "@types/jsonwebtoken": "^8.5.5"
   },
   "dependencies": {
-    "@auth/core": "workspace:*",
+    "@digital-realty/auth-core": "workspace:*",
     "jsonwebtoken": "^9.0.0"
   }
 }

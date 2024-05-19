@@ -129,19 +129,19 @@ import {
   type AuthConfig,
   setEnvDefaults,
   createActionURL,
-} from "@auth/core"
-import type { Session } from "@auth/core/types"
+} from "@digital-realty/auth-core"
+import type { Session } from "@digital-realty/auth-core/types"
 import * as e from "express"
 import { toWebRequest, toExpressResponse } from "./lib/index.js"
 
-export { AuthError, CredentialsSignin } from "@auth/core/errors"
+export { AuthError, CredentialsSignin } from "@digital-realty/auth-core/errors"
 export type {
   Account,
   DefaultSession,
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@digital-realty/auth-core/types"
 
 export function ExpressAuth(config: Omit<AuthConfig, "raw">) {
   return async (req: e.Request, res: e.Response, next: e.NextFunction) => {

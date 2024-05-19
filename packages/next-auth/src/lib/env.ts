@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server"
 import type { NextAuthConfig } from "./index.js"
-import { setEnvDefaults as coreSetEnvDefaults } from "@auth/core"
+import { setEnvDefaults as coreSetEnvDefaults } from "@digital-realty/auth-core"
 
 /** If `NEXTAUTH_URL` or `AUTH_URL` is defined, override the request's URL. */
 export function reqWithEnvURL(req: NextRequest): NextRequest {

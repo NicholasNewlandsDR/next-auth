@@ -71,8 +71,8 @@ export interface OsuProfile extends OsuUserCompact, Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Osu from "@auth/core/providers/osu"
+ * import Auth from "@digital-realty/auth-core"
+ * import Osu from "@digital-realty/auth-core/providers/osu"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

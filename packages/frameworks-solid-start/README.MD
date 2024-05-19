@@ -3,7 +3,7 @@
 Recommended to use [create-jd-app](https://github.com/OrJDev/create-jd-app)
 
 ```bash
-npm install @auth/solid-start@latest @auth/core@latest
+npm install @auth/solid-start@latest @digital-realty/auth-core@latest
 ```
 
 ## Setting It Up
@@ -34,7 +34,7 @@ GITHUB_SECRET=your_github_oauth_secret
 ```ts
 // routes/api/auth/[...solidauth].ts
 import { SolidAuth, type SolidAuthConfig } from "@auth/solid-start"
-import GitHub from "@auth/core/providers/github"
+import GitHub from "@digital-realty/auth-core/providers/github"
 
 export const authOpts: SolidAuthConfig = {
   providers: [

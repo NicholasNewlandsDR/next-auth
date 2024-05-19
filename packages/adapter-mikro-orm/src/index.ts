@@ -20,7 +20,7 @@ import type {
   Options as ORMOptions,
 } from "@mikro-orm/core"
 
-import type { Adapter } from "@auth/core/adapters"
+import type { Adapter } from "@digital-realty/auth-core/adapters"
 
 import { MikroORM, wrap } from "@mikro-orm/core"
 

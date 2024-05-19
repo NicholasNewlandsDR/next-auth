@@ -114,8 +114,8 @@ export interface TwitterProfile {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Twitter from "@auth/core/providers/twitter"
+ * import Auth from "@digital-realty/auth-core"
+ * import Twitter from "@digital-realty/auth-core/providers/twitter"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

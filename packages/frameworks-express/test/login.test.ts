@@ -3,8 +3,8 @@ import supertest from "supertest"
 import express from "express"
 import { ExpressAuth, getSession } from "../src/index.js"
 
-import CredentialsProvider from "@auth/core/providers/credentials"
-import type { AuthConfig } from "@auth/core"
+import CredentialsProvider from "@digital-realty/auth-core/providers/credentials"
+import type { AuthConfig } from "@digital-realty/auth-core"
 
 export const authConfig = {
   secret: "secret",

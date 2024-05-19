@@ -21,7 +21,7 @@ import type {
   AdapterSession,
   AdapterUser,
   VerificationToken,
-} from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
 import type { Client } from "edgedb"
 
 export function EdgeDBAdapter(client: Client): Adapter {

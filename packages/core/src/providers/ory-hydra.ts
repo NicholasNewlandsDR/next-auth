@@ -34,8 +34,8 @@ export interface OryHydraProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import OryHydra from "@auth/core/providers/ory-hydra"
+ * import Auth from "@digital-realty/auth-core"
+ * import OryHydra from "@digital-realty/auth-core/providers/ory-hydra"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

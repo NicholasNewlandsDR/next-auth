@@ -43,8 +43,8 @@ export interface WorkOSProfile extends Record<string, any> {
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import WorkOS from "@auth/core/providers/workos"
+ * import Auth from "@digital-realty/auth-core"
+ * import WorkOS from "@digital-realty/auth-core/providers/workos"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

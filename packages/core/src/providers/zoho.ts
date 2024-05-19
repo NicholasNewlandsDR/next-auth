@@ -22,8 +22,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import ZOHO from "@auth/core/providers/zoho"
+ * import Auth from "@digital-realty/auth-core"
+ * import ZOHO from "@digital-realty/auth-core/providers/zoho"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

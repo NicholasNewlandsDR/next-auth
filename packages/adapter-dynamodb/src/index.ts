@@ -26,7 +26,7 @@ import {
   type AdapterUser,
   type VerificationToken,
   isDate,
-} from "@auth/core/adapters"
+} from "@digital-realty/auth-core/adapters"
 
 export interface DynamoDBAdapterOptions {
   tableName?: string

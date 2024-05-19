@@ -23,8 +23,8 @@ import type { OAuthConfig, OAuthUserConfig } from "./index.js"
  *
  * #### Configuration
  *```js
- * import Auth from "@auth/core"
- * import Medium from "@auth/core/providers/medium"
+ * import Auth from "@digital-realty/auth-core"
+ * import Medium from "@digital-realty/auth-core/providers/medium"
  *
  * const request = new Request(origin)
  * const response = await Auth(request, {

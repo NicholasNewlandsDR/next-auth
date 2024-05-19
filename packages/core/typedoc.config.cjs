@@ -15,7 +15,7 @@ module.exports = {
   entryPointStrategy: "expand",
   tsconfig: "./tsconfig.json",
   entryFileName: "../core.mdx",
-  entryModule: "@auth/core",
+  entryModule: "@digital-realty/auth-core",
   includeVersion: true,  
   readme:'none',
 }
